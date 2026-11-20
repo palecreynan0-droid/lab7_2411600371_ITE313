@@ -18,6 +18,8 @@ class Product extends Model
         'price',
         'quantity',
         'reorder_level',
+        'safety_stock',   // added
+        'package_size', 
         'unit',
     ];
 
