@@ -20,6 +20,11 @@
                     <x-nav-link :href="route('suppliers.index')" :active="request()->routeIs('suppliers.*')">
                         {{ __('Suppliers') }}
                     </x-nav-link>
+
+                    <!-- ADDED: Purchase Orders -->
+                    <x-nav-link :href="route('purchase-orders.index')" :active="request()->routeIs('purchase-orders.*')">
+                        {{ __('Purchase Orders') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -79,6 +84,11 @@
             <!-- ADDED: Suppliers -->
             <x-responsive-nav-link :href="route('suppliers.index')" :active="request()->routeIs('suppliers.*')">
                 {{ __('Suppliers') }}
+            </x-responsive-nav-link>
+
+            <!-- ADDED: Purchase Orders -->
+            <x-responsive-nav-link :href="route('purchase-orders.index')" :active="request()->routeIs('purchase-orders.*')">
+                {{ __('Purchase Orders') }}
             </x-responsive-nav-link>
         </div>
 
